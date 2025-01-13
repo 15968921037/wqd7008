@@ -1,0 +1,15 @@
+
+[1mLogistic Regression[0m Training and Evaluation:
+
+Logistic Regression Accuracy: 0.8623
+Logistic Regression F1-Score: 0.8631
+Logistic Regression ROC-AUC: 0.9484
+... Saved Logistic Regression confusion matrix as 'Logistic_Regression_confusion_matrix.png'
+
+... Saved Logistic Regression ROC curve as 'Logistic_Regression_roc_curve.png'
+
+------------------------------------------------------------------------------------------------------------------------ 
+
+Model Performance Summary:
+
+saved to train_lr.pkl

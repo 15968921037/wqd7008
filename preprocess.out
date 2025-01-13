@@ -1,0 +1,95 @@
+
+Data preprocessing is complete.
+
+... Saved preprocessed dataset as 'preprocessed_dataset.csv'
+
+First 5 rows of the preprocessed dataset:
+
+        Date  Location  Temperature  ...  Year  Month  Day
+0 2024-01-01  New York     1.105756  ...  2024      1    1
+1 2024-01-02  New York     0.894653  ...  2024      1    2
+2 2024-01-03  New York     0.780018  ...  2024      1    3
+3 2024-01-04  New York     0.639191  ...  2024      1    4
+4 2024-01-05  New York    -1.391804  ...  2024      1    5
+
+[5 rows x 14 columns] 
+
+------------------------------------------------------------------------------------------------------------------------ 
+
+Original Class Distribution:
+
+Rain Tomorrow
+0    56988
+1    16112
+Name: count, dtype: int64 
+
+------------------------------------------------------------------------------------------------------------------------ 
+
+minority_class:             Date         Location  Temperature  ...  Year  Month  Day
+2     2024-01-03         New York     0.780018  ...  2024      1    3
+8     2024-01-09         New York    -1.416276  ...  2024      1    9
+15    2024-01-16         New York     1.034088  ...  2024      1   16
+31    2024-02-01         New York    -1.204084  ...  2024      2    1
+33    2024-02-03         New York    -0.532647  ...  2024      2    3
+...          ...              ...          ...  ...   ...    ...  ...
+73084 2025-12-16  Washington D.C.    -0.492637  ...  2025     12   16
+73089 2025-12-21  Washington D.C.    -0.933820  ...  2025     12   21
+73091 2025-12-23  Washington D.C.    -0.929332  ...  2025     12   23
+73097 2025-12-29  Washington D.C.    -0.430062  ...  2025     12   29
+73098 2025-12-30  Washington D.C.     0.028046  ...  2025     12   30
+
+[16112 rows x 14 columns] 
+
+minority_upsampled:             Date         Location  Temperature  ...  Year  Month  Day
+33035 2024-05-20         San Jose    -1.635908  ...  2024      5   20
+71623 2025-12-17  Washington D.C.    -1.205060  ...  2025     12   17
+4124  2025-04-14      Los Angeles     0.861373  ...  2025      4   14
+24597 2025-04-19      San Antonio     0.957816  ...  2025      4   19
+60843 2024-06-19    San Francisco     0.834831  ...  2024      6   19
+...          ...              ...          ...  ...   ...    ...  ...
+43322 2024-07-12     Jacksonville     1.721520  ...  2024      7   12
+31482 2024-02-19           Dallas    -1.070786  ...  2024      2   19
+27955 2024-06-26        San Diego    -0.395608  ...  2024      6   26
+8093  2024-02-22          Chicago     1.447619  ...  2024      2   22
+54505 2025-02-15     Indianapolis     1.414444  ...  2025      2   15
+
+[56988 rows x 14 columns] 
+
+data_balanced:             Date      Location  Temperature  ...  Year  Month  Day
+0     2024-01-01      New York     1.105756  ...  2024      1    1
+1     2024-01-02      New York     0.894653  ...  2024      1    2
+3     2024-01-04      New York     0.639191  ...  2024      1    4
+4     2024-01-05      New York    -1.391804  ...  2024      1    5
+5     2024-01-06      New York    -1.478973  ...  2024      1    6
+...          ...           ...          ...  ...   ...    ...  ...
+43322 2024-07-12  Jacksonville     1.721520  ...  2024      7   12
+31482 2024-02-19        Dallas    -1.070786  ...  2024      2   19
+27955 2024-06-26     San Diego    -0.395608  ...  2024      6   26
+8093  2024-02-22       Chicago     1.447619  ...  2024      2   22
+54505 2025-02-15  Indianapolis     1.414444  ...  2025      2   15
+
+[113976 rows x 14 columns] 
+
+New Class Distribution after Oversampling:
+
+Rain Tomorrow
+0    56988
+1    56988
+Name: count, dtype: int64 
+
+df_balanced:             Date      Location  Temperature  ...  Year  Month  Day
+0     2024-01-01      New York     1.105756  ...  2024      1    1
+1     2024-01-02      New York     0.894653  ...  2024      1    2
+3     2024-01-04      New York     0.639191  ...  2024      1    4
+4     2024-01-05      New York    -1.391804  ...  2024      1    5
+5     2024-01-06      New York    -1.478973  ...  2024      1    6
+...          ...           ...          ...  ...   ...    ...  ...
+43322 2024-07-12  Jacksonville     1.721520  ...  2024      7   12
+31482 2024-02-19        Dallas    -1.070786  ...  2024      2   19
+27955 2024-06-26     San Diego    -0.395608  ...  2024      6   26
+8093  2024-02-22       Chicago     1.447619  ...  2024      2   22
+54505 2025-02-15  Indianapolis     1.414444  ...  2025      2   15
+
+[113976 rows x 14 columns] 
+
+Preprocessed data saved to preprocessed_data.pkl

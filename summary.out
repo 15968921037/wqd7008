@@ -1,0 +1,5 @@
+            Model Name  Accuracy  F1-Score  ROC-AUC
+0  Logistic Regression  0.862344  0.863077  0.94841
+1        Random Forest  1.000000  1.000000  1.00000
+2    Gradient Boosting  1.000000  1.000000  1.00000
+saved to summary.pkl

@@ -1,0 +1,33 @@
+#!/usr/bin/env python3
+import pandas as pd
+from concurrent.futures import ThreadPoolExecutor
+from sklearn.preprocessing import StandardScaler
+import os
+import pickle
+import sys
+from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.preprocessing import LabelEncoder
+
+
+with open("preprocessed_data.pkl", "rb") as f:
+    df_balanced = pickle.load(f)
+    le = LabelEncoder()
+    df_balanced['Rain Tomorrow'] = le.fit_transform(df_balanced['Rain Tomorrow'])
+    X = df_balanced.drop(columns=['Rain Tomorrow', 'Date', 'Location'])
+    y = df_balanced['Rain Tomorrow']
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+
+
+# Save the split data to a pickle file
+split_data = {
+    "X_train": X_train,
+    "X_test": X_test,
+    "y_train": y_train,
+    "y_test": y_test
+}
+
+with open("split_data.pkl", "wb") as f:
+    pickle.dump(split_data, f)
+
+print("saved to split_data.pkl")

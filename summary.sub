@@ -1,0 +1,15 @@
+# summary.sub
+executable = summary.py
+log = summary.log
+output = summary.out
+error = summary.err
+
+transfer_input_files = train_lr.pkl, train_rf.pkl, train_gb.pkl
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+request_cpus = 1
+request_memory = 512M
+request_disk = 1G
+
+queue

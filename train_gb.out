@@ -1,0 +1,15 @@
+
+[1mGradient Boosting[0m Training and Evaluation:
+
+Gradient Boosting Accuracy: 1.0000
+Gradient Boosting F1-Score: 1.0000
+Gradient Boosting ROC-AUC: 1.0000
+... Saved Gradient Boosting confusion matrix as 'Gradient_Boosting_confusion_matrix.png'
+
+... Saved Gradient Boosting ROC curve as 'Gradient_Boosting_roc_curve.png'
+
+------------------------------------------------------------------------------------------------------------------------ 
+
+Model Performance Summary:
+
+saved to train_gb.pkl

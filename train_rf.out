@@ -1,0 +1,15 @@
+
+[1mRandom Forest[0m Training and Evaluation:
+
+Random Forest Accuracy: 1.0000
+Random Forest F1-Score: 1.0000
+Random Forest ROC-AUC: 1.0000
+... Saved Random Forest confusion matrix as 'Random_Forest_confusion_matrix.png'
+
+... Saved Random Forest ROC curve as 'Random_Forest_roc_curve.png'
+
+------------------------------------------------------------------------------------------------------------------------ 
+
+Model Performance Summary:
+
+saved to train_rf.pkl

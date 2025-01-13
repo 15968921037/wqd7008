@@ -1,0 +1,86 @@
+000 (003.000.000) 2025-01-09 03:57:24 Job submitted from host: <172.31.22.144:9618?addrs=172.31.22.144-9618&alias=ip-172-31-22-144.ec2.internal&noUDP&sock=schedd_14850_717c>
+...
+040 (003.000.000) 2025-01-09 03:57:24 Started transferring input files
+	Transferring to host: <172.31.30.36:9618?addrs=172.31.30.36-9618&alias=ip-172-31-30-36.ec2.internal&noUDP&sock=slot1_1_1740_bcc0_3>
+...
+040 (003.000.000) 2025-01-09 03:57:24 Finished transferring input files
+...
+001 (003.000.000) 2025-01-09 03:57:25 Job executing on host: <172.31.30.36:9618?addrs=172.31.30.36-9618&alias=ip-172-31-30-36.ec2.internal&noUDP&sock=startd_1706_c0a8>
+	SlotName: slot1_1@ip-172-31-30-36.ec2.internal
+	CondorScratchDir = "/var/lib/condor/execute/dir_14065"
+	Cpus = 1
+	Disk = 1049600
+	GPUs = 0
+	Memory = 512
+...
+006 (003.000.000) 2025-01-09 03:57:27 Image size of job updated: 944
+	1  -  MemoryUsage of job (MB)
+	944  -  ResidentSetSize of job (KB)
+...
+040 (003.000.000) 2025-01-09 03:57:27 Started transferring output files
+...
+040 (003.000.000) 2025-01-09 03:57:27 Finished transferring output files
+...
+005 (003.000.000) 2025-01-09 03:57:27 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:01, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:01, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	2451  -  Run Bytes Sent By Job
+	9348194  -  Run Bytes Received By Job
+	2451  -  Total Bytes Sent By Job
+	9348194  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :     9147  1048576   1049600 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        1      512       512 
+	   TimeExecute (s)      :        2                    
+	   TimeSlotBusy (s)     :        3                    
+
+	Job terminated of its own accord at 2025-01-09T03:57:27Z with exit-code 1.
+...
+000 (004.000.000) 2025-01-09 04:02:33 Job submitted from host: <172.31.22.144:9618?addrs=172.31.22.144-9618&alias=ip-172-31-22-144.ec2.internal&noUDP&sock=schedd_14850_717c>
+...
+040 (004.000.000) 2025-01-09 04:02:44 Started transferring input files
+	Transferring to host: <172.31.30.36:9618?addrs=172.31.30.36-9618&alias=ip-172-31-30-36.ec2.internal&noUDP&sock=slot1_1_1740_bcc0_4>
+...
+040 (004.000.000) 2025-01-09 04:02:44 Finished transferring input files
+...
+001 (004.000.000) 2025-01-09 04:02:45 Job executing on host: <172.31.30.36:9618?addrs=172.31.30.36-9618&alias=ip-172-31-30-36.ec2.internal&noUDP&sock=startd_1706_c0a8>
+	SlotName: slot1_1@ip-172-31-30-36.ec2.internal
+	CondorScratchDir = "/var/lib/condor/execute/dir_14072"
+	Cpus = 1
+	Disk = 1049600
+	GPUs = 0
+	Memory = 512
+...
+006 (004.000.000) 2025-01-09 04:02:54 Image size of job updated: 222652
+	218  -  MemoryUsage of job (MB)
+	222652  -  ResidentSetSize of job (KB)
+...
+040 (004.000.000) 2025-01-09 04:06:15 Started transferring output files
+...
+040 (004.000.000) 2025-01-09 04:06:15 Finished transferring output files
+...
+005 (004.000.000) 2025-01-09 04:06:15 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:03:29, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:03:29, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	14984659  -  Run Bytes Sent By Job
+	9348194  -  Run Bytes Received By Job
+	14984659  -  Total Bytes Sent By Job
+	9348194  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            : 23778     1048576   1049600 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   218         512       512 
+	   TimeExecute (s)      :   210                       
+	   TimeSlotBusy (s)     :   211                       
+
+	Job terminated of its own accord at 2025-01-09T04:06:15Z with exit-code 0.
+...

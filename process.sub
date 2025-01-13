@@ -1,0 +1,16 @@
+# process.sub -- rainfall prediction job
+
+executable = new_7008_group_2.py
+log = process.log
+output = process.out
+error = process.err
+
+transfer_input_files = usa_rain_prediction_dataset_2024_2025.csv
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+request_cpus = 1
+request_memory = 512M
+request_disk = 1G
+
+queue

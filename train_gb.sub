@@ -1,0 +1,15 @@
+# train_gb.sub
+executable = train_gb.py
+log = train_gb.log
+output = train_gb.out
+error = train_gb.err
+
+transfer_input_files = split_data.pkl
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+request_cpus = 1
+request_memory = 512M
+request_disk = 1G
+
+queue

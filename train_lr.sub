@@ -1,0 +1,15 @@
+# train_lr.sub
+executable = train_lr.py
+log = train_lr.log
+output = train_lr.out
+error = train_lr.err
+
+transfer_input_files = split_data.pkl
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+request_cpus = 1
+request_memory = 512M
+request_disk = 1G
+
+queue

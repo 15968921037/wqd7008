@@ -1,0 +1,12 @@
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+
+# Load dataset
+df = pd.read_csv("imported_dataset.csv")
+
+# Preprocessing
+df['Temp_Humidity_Interaction'] = df['Temperature'] * df['Humidity']
+scaler = StandardScaler()
+numeric_columns = df.select_dtypes(include=['float64', 'int64']).columns.drop('Rain Tomorrow')
+df[numeric_columns] = scaler.fit_transform(df[numeric_columns])
+df.to_csv("preprocessed_dataset.csv", index=False)

@@ -1,0 +1,7 @@
+mkdir -p failed for path /nonexistent/.config/matplotlib: [Errno 13] Permission denied: '/nonexistent'
+Matplotlib created a temporary cache directory at /tmp/matplotlib-uy2mih6h because there was an issue with the default path (/nonexistent/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+/var/lib/condor/execute/dir_1007/eda.py:55: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.countplot(x='Rain Tomorrow', data=df, palette='coolwarm')

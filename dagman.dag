@@ -1,0 +1,14 @@
+JOB ImportJob import.sub
+JOB PreprocessJob preprocess.sub
+JOB EDAJob eda.sub
+JOB SplitJob split.sub
+JOB TrainLR train_lr.sub
+JOB TrainRF train_rf.sub
+JOB TrainGB train_gb.sub
+JOB Summary summary.sub
+
+PARENT ImportJob CHILD PreprocessJob
+PARENT PreprocessJob CHILD EDAJob SplitJob
+PARENT SplitJob CHILD TrainLR TrainRF TrainGB
+PARENT TrainLR TrainGB TrainGB CHILD Summary
+

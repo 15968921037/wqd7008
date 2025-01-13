@@ -1,0 +1,88 @@
+000 (186.000.000) 2025-01-12 16:45:13 Job submitted from host: <172.31.42.11:9618?addrs=172.31.42.11-9618&alias=ip-172-31-42-11.ec2.internal&noUDP&sock=schedd_1048_6b57>
+    DAG Node: Summary
+...
+040 (186.000.000) 2025-01-12 16:45:13 Started transferring input files
+	Transferring to host: <172.31.17.139:9618?addrs=172.31.17.139-9618&alias=ip-172-31-17-139.ec2.internal&noUDP&sock=slot1_2_952_8520_62>
+...
+040 (186.000.000) 2025-01-12 16:45:13 Finished transferring input files
+...
+001 (186.000.000) 2025-01-12 16:45:14 Job executing on host: <172.31.17.139:9618?addrs=172.31.17.139-9618&alias=ip-172-31-17-139.ec2.internal&noUDP&sock=startd_918_4007>
+	SlotName: slot1_2@ip-172-31-17-139.ec2.internal
+	CondorScratchDir = "/var/lib/condor/execute/dir_1404"
+	Cpus = 1
+	Disk = 1049600
+	GPUs = 0
+	Memory = 512
+...
+006 (186.000.000) 2025-01-12 16:45:15 Image size of job updated: 400
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (186.000.000) 2025-01-12 16:45:15 Started transferring output files
+...
+040 (186.000.000) 2025-01-12 16:45:15 Finished transferring output files
+...
+005 (186.000.000) 2025-01-12 16:45:15 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1108  -  Run Bytes Sent By Job
+	1264  -  Run Bytes Received By Job
+	1108  -  Total Bytes Sent By Job
+	1264  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :       18  1048576   1049600 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0      512       512 
+	   TimeExecute (s)      :        1                    
+	   TimeSlotBusy (s)     :        2                    
+
+	Job terminated of its own accord at 2025-01-12T16:45:15Z with exit-code 0.
+...
+000 (195.000.000) 2025-01-13 00:49:25 Job submitted from host: <172.31.42.11:9618?addrs=172.31.42.11-9618&alias=ip-172-31-42-11.ec2.internal&noUDP&sock=schedd_1068_233c>
+    DAG Node: Summary
+...
+040 (195.000.000) 2025-01-13 00:49:25 Started transferring input files
+	Transferring to host: <172.31.17.139:9618?addrs=172.31.17.139-9618&alias=ip-172-31-17-139.ec2.internal&noUDP&sock=slot1_2_955_a240_10>
+...
+040 (195.000.000) 2025-01-13 00:49:25 Finished transferring input files
+...
+001 (195.000.000) 2025-01-13 00:49:26 Job executing on host: <172.31.17.139:9618?addrs=172.31.17.139-9618&alias=ip-172-31-17-139.ec2.internal&noUDP&sock=startd_921_4ed0>
+	SlotName: slot1_2@ip-172-31-17-139.ec2.internal
+	CondorScratchDir = "/var/lib/condor/execute/dir_1034"
+	Cpus = 1
+	Disk = 1049600
+	GPUs = 0
+	Memory = 512
+...
+006 (195.000.000) 2025-01-13 00:49:26 Image size of job updated: 408
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (195.000.000) 2025-01-13 00:49:26 Started transferring output files
+...
+040 (195.000.000) 2025-01-13 00:49:26 Finished transferring output files
+...
+005 (195.000.000) 2025-01-13 00:49:26 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	1284  -  Run Bytes Sent By Job
+	1243  -  Run Bytes Received By Job
+	1284  -  Total Bytes Sent By Job
+	1243  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :       18  1048576   1049600 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0      512       512 
+	   TimeExecute (s)      :        0                    
+	   TimeSlotBusy (s)     :        1                    
+
+	Job terminated of its own accord at 2025-01-13T00:49:26Z with exit-code 0.
+...

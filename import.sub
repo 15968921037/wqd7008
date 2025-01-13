@@ -1,0 +1,15 @@
+# import.sub 
+executable = import.py
+log = import.log
+output = import.out
+error = import.err
+
+transfer_input_files = usa_rain_prediction_dataset_2024_2025.csv
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+request_cpus = 1
+request_memory = 512M
+request_disk = 1G
+
+queue
